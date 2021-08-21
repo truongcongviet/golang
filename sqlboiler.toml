@@ -1,0 +1,16 @@
+schema: public
+pkgname: models
+output: internal/models
+no-tests: 'true'
+no-hooks: 'true'
+psql:
+  dbname: demo_boiler_db
+  host: localhost
+  port: 5432
+  user: postgres
+  pass: quanpro99
+  sslmode: disable
+  blacklist:
+    - schema_migrations
+    - dbmigrate_versions
+
